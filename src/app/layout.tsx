@@ -7,11 +7,6 @@ import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-// export const metadata: Metadata = {
-//   title: "HobbyFlo",
-//   description: "HobbyFlo is a rental platform",
-// };
-
 export default function RootLayout({
   children,
 }: {
