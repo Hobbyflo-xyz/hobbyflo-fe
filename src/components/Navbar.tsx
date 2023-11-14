@@ -1,13 +1,16 @@
-import React from 'react';
+import React from "react";
 
 function Navbar() {
   return (
-    <nav className="flex items-center justify-between p-6 bg-[#00dc94] text-white">
+    <nav className="flex items-center justify-between p-6 bg-[#00dc94] text-black">
       <h1 className="text-xl font-bold">HobbyFlo</h1>
       <div>
-        <a href="#features" className="px-4">Features</a>
-        <a href="#testimonials" className="px-4">Testimonials</a>
-        <a href="#contact" className="px-4">Contact</a>
+        <a href="/dashboard" className="px-4">
+          Enter App
+        </a>
+        <a href="/team" className="px-4">
+          Team
+        </a>
       </div>
     </nav>
   );
