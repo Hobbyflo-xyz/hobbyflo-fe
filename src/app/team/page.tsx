@@ -1,3 +1,4 @@
+import Navbar from "@/components/Navbar";
 import React from "react";
 
 function TeamMember({
@@ -31,51 +32,50 @@ export default function Page() {
       name: "Miro Sourial",
       title: "CEO",
       description: "HobbyFlo's vision was birthed from Miro's imagination.",
-      imageUrl:
-        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+      imageUrl: "/team/Miro_Sourial.png",
     },
     {
       name: "Patrick Devaney",
       title: "CTO",
       description:
-        "Patrick's experience with AVM and EVM development is unparalleled",
-      imageUrl:
-        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+        "Patrick's experience with AVM and EVM development is unparalleled.",
+      imageUrl: "/team/Patrick_Devaney.png",
     },
     {
       name: "Julio Cruz",
       title: "Architect",
       description: "Julio is our cloud architect.",
-      imageUrl:
-        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+      imageUrl: "/team/Julio_Cruz.png",
     },
     {
       name: "Tad Duval",
       title: "COO",
       description: "Tad is responsible for partnerships and marketing.",
-      imageUrl:
-        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+      imageUrl: "/team/Tad_Duval.png",
     },
   ];
 
   return (
-    <div className="bg-gray-100 py-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center">
-          <h2 className="text-3xl leading-9 font-extrabold text-gray-900 sm:text-4xl sm:leading-10">
-            Meet Our Team
-          </h2>
-          <p className="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">
-            A group of passionate individuals.
-          </p>
-        </div>
+    <>
+      <Navbar />
+      <div className="bg-gray-100 py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h2 className="text-3xl leading-9 font-extrabold text-gray-900 sm:text-4xl sm:leading-10">
+              Meet Our Team
+            </h2>
+            <p className="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">
+              A group of passionate individuals.
+            </p>
+          </div>
 
-        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {teamMembers.map((member, index) => (
-            <TeamMember key={index} {...member} />
-          ))}
+          <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            {teamMembers.map((member, index) => (
+              <TeamMember key={index} {...member} />
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
